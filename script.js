@@ -1,18 +1,8 @@
-// const text = "Inaya Enterprises"
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBar = document.getElementById("menuBar");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-// let index = 0;
-// let mainPara = document.getElementById("main-p")
-// function typeEffect() {
-//     if (index === 0) {
-//         mainPara.innerHTML = ""
-//     }
-//   if (index < text.length) {
-//     mainPara.innerHTML += text.charAt(index);
-//     index++;
-//     setTimeout(typeEffect, 130); 
-//   }
-// }
-// window.onload = () => {
-//     index = 0;
-//     typeEffect();
-// };
+    menuBar.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+    });
+});
