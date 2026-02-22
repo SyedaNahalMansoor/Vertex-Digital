@@ -24,6 +24,15 @@ body{
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   z-index: 1000;
 }
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo-img{
+  height: 110px;
+  display: none;
+}
 .logo > h1 {
   color: white;
 }
@@ -594,11 +603,11 @@ body{
 }
 
 .about-hero p {
-  max-width: 800px;
+  max-width: 1200px;
   margin: auto;
   font-size: 18px;
   line-height: 1.7;
-  color: #222;
+  color: #000;
 }
 
 /* Mission & Vision */
@@ -750,7 +759,7 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 .intro-content p {
-    max-width: 750px;
+    max-width: 900px;
     margin: 0 auto;
     font-size: 19px;
     line-height: 1.7;
@@ -934,6 +943,111 @@ body{
 .home-cta a:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.portfolio-hero {
+    padding: 120px 20px 80px 20px;
+    text-align: center;
+}
+
+.portfolio-hero h1 {
+    font-size: 48px;
+    color: #ffb300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.portfolio-hero p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: black;
+}
+
+.portfolio-filter {
+    text-align: center;
+    padding: 40px 20px;
+    /* background: #111; */
+}
+.filter-btn {
+    background: #222;
+    color: #ffb300;
+    border: none;
+    padding: 20px 35px;
+    margin: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.filter-btn:hover,
+.filter-btn.active {
+    background: #ffb300;
+    color: #000;
+}
+
+.portfolio-grid {
+    padding: 100px 20px;
+    background-color: #FFB300;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.portfolio-card {
+    background-color: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(255, 179, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 60px rgba(255, 179, 0, 0.25);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-info {
+    padding: 30px 25px;
+    color: #ffffff;
+}
+
+.portfolio-info h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffb300;
+    letter-spacing: 0.5px;
+}
+
+.portfolio-info p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: white;
+}
+
+.portfolio-closing {
+    padding: 90px 100px;
+    text-align: center;
+}
+
+.portfolio-closing p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #000;
 }
 
 @media screen and (max-width : 1024px) {
